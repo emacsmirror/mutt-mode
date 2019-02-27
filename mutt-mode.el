@@ -363,9 +363,9 @@ This is buffer-local in every such buffer.")
 			   "pgp_decryption_okay"
 			   "pgp_default_key"
 			   "pgp_encrypt_only_command"
-			   "pgp_encypt_sign_command"
+			   "pgp_encrypt_sign_command"
 			   "pgp_entry_format"
-			   "pgp_export_format"
+			   "pgp_export_command"
 			   "pgp_getkeys_command"
 			   "pgp_good_sign"
 			   "pgp_import_command"
@@ -966,7 +966,6 @@ This is buffer-local in every such buffer.")
 
 	    (x-keywords-regexp (concat "\\(^[ ]*\\|.*;[ ]*\\)\\(" (regexp-opt x-keywords 'words) "\\)"))
 	    (x-types-regexp (concat "\\(.*=[ ]*\\)\\(" (regexp-opt x-types 'words) "\\)"))
-	    ;(x-types-regexp (regexp-opt x-types 'words))
 	    (x-constants-regexp (concat "\\<color[0-9]*\\>\\|" "\\<quoted[0-9]*\\>\\|" (regexp-opt x-constants 'words)))
 	    (x-events-regexp (concat "\\<[a-z]\\>\\|\\<[A-z]\\>\\|" (regexp-opt x-events 'words)))
 	    (x-functions-regexp (regexp-opt x-functions 'words)))
