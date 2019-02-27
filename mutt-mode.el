@@ -1,14 +1,35 @@
 ;;; mutt-mode.el --- major mode for editing mutt configuration -*- lexical-binding: t; -*-
 
-;; Author: 2019- Felix Weilbach
-;; Maintainer: felix.weilbach@t-online.de
+;; Copyright (c) 2019 Felix Weilbach <felix.weilbach@t-online.de>
+
+;; Author: Felix Weilbach <felix.weilbach@t-online.de>
+;; URL: https://gitlab.com/flexw/mutt-mode
+;; Keywords: languages
+;; Version: 0.1
+;; Package-Requires: ((emacs "24"))
+
+;; This file is not part of GNU Emacs.
+
+;;; License:
+
+;; This program is free software: you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ;;; Commentary:
 
-;; Highlights the syntax of mutt configuration files.
+;; Major mode for mutt configuration files.  Highlights the syntax of mutt configuration files.
 
 ;;; Code:
-
 (defvar mutt-mode-syntax-table
   (let ((syn-table (make-syntax-table)))
     (modify-syntax-entry ?# "<" syn-table)
