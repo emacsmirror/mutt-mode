@@ -452,7 +452,7 @@ This is buffer-local in every such buffer.")
 			   "sidebar_width"
 			   "sidebar_divider"
 			   "sidebar_flagged"
-			   "sidebar_sidebar_highlight"
+			   "sidebar_highlight"
 			   "sidebar_indicator"
 			   "sidebar_new"
 			   "sidebar_ordinary"
