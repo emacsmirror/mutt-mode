@@ -45,7 +45,6 @@ This is buffer-local in every such buffer.")
 
 (defvar mutt-font-lock-keywords
       (let* (
-	    ;; define several category of keywords
 	     (x-keywords '( "account-hook"
 			    "alias"
 			    "unalias"
