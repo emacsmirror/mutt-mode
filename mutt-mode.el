@@ -964,7 +964,8 @@ This is buffer-local in every such buffer.")
 				   "history-search"
 				   "transpose-chars")))
 
-	    (x-keywords-regexp (concat "\\(^[ ]*\\|.*;[ ]*\\)\\(" (regexp-opt x-keywords t) "\\)"))
+	    (x-keywords-regexp (concat "\\(^[ ]*\\|.*;[ ]*\\)\\(" (regexp-opt x-keywords 'words) "\\)"))
+	    ;(x-types-regexp (concat "\\(.*=[ ]*\\)\\(" (regexp-opt x-types 'words) "\\)"))
 	    (x-types-regexp (regexp-opt x-types 'words))
 	    (x-constants-regexp (concat "\\<color[0-9]*\\>\\|" "\\<quoted[0-9]*\\>\\|" (regexp-opt x-constants 'words)))
 	    (x-events-regexp (concat "\\<[a-z]\\>\\|\\<[A-z]\\>\\|" (regexp-opt x-events 'words)))
