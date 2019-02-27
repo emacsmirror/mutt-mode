@@ -43,7 +43,7 @@
   "The syntax table to use for Mutt mode.
 This is buffer-local in every such buffer.")
 
-(setq mutt-font-lock-keywords
+(defvar mutt-font-lock-keywords
       (let* (
 	    ;; define several category of keywords
 	     (x-keywords '( "account-hook"
