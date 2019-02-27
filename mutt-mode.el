@@ -20,7 +20,7 @@
     (modify-syntax-entry ?> "w" syn-table)
     syn-table)
   "The syntax table to use for Mutt mode.
-This is buffer-local in every such buffer")
+This is buffer-local in every such buffer.")
 
 (setq mutt-font-lock-keywords
       (let* (
