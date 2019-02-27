@@ -115,7 +115,11 @@ This is buffer-local in every such buffer.")
 	     (x-types '("yes"
 			"no"
 			"ask-yes"
-			"ask-no"))
+			"ask-no"
+			"Maildir"
+			"MH"
+			"MMDF"
+			"mbox"))
 	     (x-constants '("attachment"
 			    "bold"
 			    "error"
