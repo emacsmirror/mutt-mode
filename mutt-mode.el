@@ -965,15 +965,15 @@ This is buffer-local in every such buffer.")
 				   "transpose-chars")))
 
 	    (x-keywords-regexp (concat "\\(^[ ]*\\|.*;[ ]*\\)\\(" (regexp-opt x-keywords 'words) "\\)"))
-	    ;(x-types-regexp (concat "\\(.*=[ ]*\\)\\(" (regexp-opt x-types 'words) "\\)"))
-	    (x-types-regexp (regexp-opt x-types 'words))
+	    (x-types-regexp (concat "\\(.*=[ ]*\\)\\(" (regexp-opt x-types 'words) "\\)"))
+	    ;(x-types-regexp (regexp-opt x-types 'words))
 	    (x-constants-regexp (concat "\\<color[0-9]*\\>\\|" "\\<quoted[0-9]*\\>\\|" (regexp-opt x-constants 'words)))
 	    (x-events-regexp (concat "\\<[a-z]\\>\\|\\<[A-z]\\>\\|" (regexp-opt x-events 'words)))
 	    (x-functions-regexp (regexp-opt x-functions 'words)))
 
 	`(
 	  (,x-keywords-regexp	.	(2 font-lock-keyword-face))
-	  (,x-types-regexp	.	font-lock-type-face)
+	  (,x-types-regexp	.	(2 font-lock-type-face))
 	  (,x-constants-regexp	.	font-lock-constant-face)
 	  (,x-events-regexp	.	font-lock-builtin-face)
 	  (,x-functions-regexp	.	font-lock-function-name-face)
