@@ -1,4 +1,4 @@
-;;; mutt-mode.el --- major mode for editing mutt configuration
+;;; mutt-mode.el --- major mode for editing mutt configuration -*- lexical-binding: t; -*-
 
 ;; Author: 2019- Felix Weilbach
 ;; Maintainer: felix.weilbach@t-online.de
