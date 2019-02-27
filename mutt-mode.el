@@ -593,7 +593,7 @@ This is buffer-local in every such buffer")
 			"<F10>"
 			"<F11>"
 			"<F12>"))
-	    (x-functions (mapcar '(lambda (s) (concat "<" s ">"))
+	    (x-functions (mapcar (lambda (s) (concat "<" s ">"))
 				 '("top-page"
 				   "next-entry"
 				   "previous-entry"
