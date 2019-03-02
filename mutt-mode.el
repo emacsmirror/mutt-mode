@@ -985,9 +985,9 @@ This is buffer-local in every such buffer.")
   (setq font-lock-defaults '((mutt-font-lock-keywords))))
 
 ;;;###autoload
-(add-to-list 'auto-mode-alist '("\\.muttrc\\". mutt-mode))
+(add-to-list 'auto-mode-alist '("\\.muttrc\\'". mutt-mode))
 ;;;###autoload
-(add-to-list 'auto-mode-alist '("\\<muttrc\\>". mutt-mode))
+(add-to-list 'auto-mode-alist '("\\<muttrc\\'>". mutt-mode))
 
 (provide 'mutt-mode)
 
