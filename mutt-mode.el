@@ -982,7 +982,11 @@ This is buffer-local in every such buffer.")
 ;;;###autoload
 (define-derived-mode mutt-mode prog-mode "mutt"
   "Major mode for editing mutt configuration files."
-  (setq font-lock-defaults '((mutt-font-lock-keywords))))
+  (setq font-lock-defaults '((mutt-font-lock-keywords)))
+  (setq-local comment-start "#")
+  (setq-local comment-start-skip "#+ *")
+  (setq-local comment-end "")
+  (setq-local comment-end-skip ""))
 
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.muttrc\\'". mutt-mode))
